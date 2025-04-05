@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
 import gsap from "gsap";
@@ -72,9 +71,11 @@ const HeroSection = () => {
             >
               <Button 
                 className="bg-gradient-to-r from-purple-600 to-blue-500 text-white px-8 py-6 rounded-lg text-lg font-medium shadow-lg hover:shadow-xl transition-all"
-                onClick={() => navigate('/reports')}
+                onClick={() => {
+                  window.scrollBy({ top: 500, behavior: 'smooth' }); // Scrolls 200px down
+                }}
               >
-                Visualize Your Report Now
+                To Scroll down to get Details
               </Button>
             </motion.div>
           </motion.div>

@@ -29,9 +29,9 @@ const Header = () => {
           <motion.div whileHover={{ scale: 1.05 }}>
             <Link to="/" className="text-gray-700 hover:text-purple-600 font-medium">Home</Link>
           </motion.div>
-          <motion.div whileHover={{ scale: 1.05 }}>
+          {/* <motion.div whileHover={{ scale: 1.05 }}>
             <Link to="/reports" className="text-gray-700 hover:text-purple-600 font-medium">Reports</Link>
-          </motion.div>
+          </motion.div> */}
           <motion.div whileHover={{ scale: 1.05 }}>
             <Link to="/about" className="text-gray-700 hover:text-purple-600 font-medium">About</Link>
           </motion.div>

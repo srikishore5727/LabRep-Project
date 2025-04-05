@@ -1,5 +1,5 @@
 
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
 import gsap from "gsap";
 import { Button } from "@/components/ui/button";
@@ -18,7 +18,7 @@ const HeroSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(containerRef);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (containerRef.current && isInView) {
       const tl = gsap.timeline();
       

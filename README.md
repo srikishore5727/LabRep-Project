@@ -80,6 +80,7 @@ This application offers:
 
 ## Project Structure
 
+```
 lab-report-visualizer/
 ├── src/
 │ ├── components/ # Reusable UI components
@@ -108,6 +109,7 @@ lab-report-visualizer/
 ├── .env
 ├── package.json
 └── README.md
+```
 
 
 ## API Endpoints (Mock Data)

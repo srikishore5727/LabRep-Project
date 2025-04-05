@@ -10,14 +10,12 @@ import VisualizeReportPage from "./pages/VisualizeReportPage";
 import AboutPage from "./pages/AboutPage";
 import NotFound from "./pages/NotFound";
 
-// Initialize GSAP and React Spring
+// Initialize GSAP
 import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // Register GSAP plugins
 gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(useGSAP);
 
 const queryClient = new QueryClient();
 

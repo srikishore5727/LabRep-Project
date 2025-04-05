@@ -2,7 +2,6 @@
 import React, { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { TestResult } from "@/utils/mockData";
-import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
@@ -46,7 +45,7 @@ const TestResultVisualizer: React.FC<TestResultVisualizerProps> = ({ test }) => 
       })
     : [{ date: "Current", value: test.value }];
 
-  useGSAP(() => {
+  useEffect(() => {
     if (barRef.current && valueRef.current) {
       gsap.fromTo(
         valueRef.current,

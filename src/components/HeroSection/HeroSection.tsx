@@ -2,7 +2,6 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 
@@ -19,7 +18,7 @@ const HeroSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(containerRef);
 
-  useGSAP(() => {
+  React.useEffect(() => {
     if (containerRef.current && isInView) {
       const tl = gsap.timeline();
       
@@ -67,14 +66,17 @@ const HeroSection = () => {
           </motion.p>
           
           <motion.div className="hero-button">
-            <Button 
-              className="bg-gradient-to-r from-purple-600 to-blue-500 text-white px-8 py-6 rounded-lg text-lg font-medium shadow-lg hover:shadow-xl transition-all"
-              onClick={() => navigate('/reports')}
+            <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Visualize Your Report Now
-            </Button>
+              <Button 
+                className="bg-gradient-to-r from-purple-600 to-blue-500 text-white px-8 py-6 rounded-lg text-lg font-medium shadow-lg hover:shadow-xl transition-all"
+                onClick={() => navigate('/reports')}
+              >
+                Visualize Your Report Now
+              </Button>
+            </motion.div>
           </motion.div>
         </div>
       </div>

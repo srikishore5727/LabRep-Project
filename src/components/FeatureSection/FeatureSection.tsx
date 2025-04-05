@@ -1,7 +1,6 @@
 
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { useInView } from "framer-motion";
-import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 const features = [
@@ -31,7 +30,7 @@ const FeatureSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(containerRef, { once: true, amount: 0.2 });
 
-  useGSAP(() => {
+  useEffect(() => {
     if (containerRef.current && isInView) {
       gsap.from(".feature-title", {
         opacity: 0,

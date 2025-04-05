@@ -55,12 +55,10 @@ This application offers:
 
 ## Deployment Link
 
-- `Link - https://labreps.netlify.app/`
+[Live Demo](https://labreps.netlify.app/)
 
-
-![Emoji](labreps-visualizer-animated/public/lovable-uploads/clideo_editor_2a6c007a72414f04835aaeef93e0a6e7.gif)
-
-![Emoji](labreps-visualizer-animated/public/lovable-uploads/clideo_editor_87538582e0914ba48b58151adea02c47.gif)
+![Demo GIF](./public/lovable-uploads/clideo_editor_2a6c007a72414f04835aaeef93e0a6e7.gif)
+![Demo GIF 2](./public/lovable-uploads/clideo_editor_87538582e0914ba48b58151adea02c47.gif)
 
 ## Getting Started
 

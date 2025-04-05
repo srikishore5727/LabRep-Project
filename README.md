@@ -51,6 +51,17 @@ This application offers:
 *   **Styling:** CSS Modules
 *   **Data Fetching:** Catalyst `serverFetcher`
 
+
+
+## Deployment Link
+
+- `Link - https://labreps.netlify.app/`
+
+
+![Emoji](labreps-visualizer-animated/public/lovable-uploads/clideo_editor_2a6c007a72414f04835aaeef93e0a6e7.gif)
+
+![Emoji](labreps-visualizer-animated/public/lovable-uploads/clideo_editor_87538582e0914ba48b58151adea02c47.gif)
+
 ## Getting Started
 
 1.  **Prerequisites:**

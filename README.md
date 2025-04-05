@@ -132,6 +132,10 @@ lab-report-visualizer/
 *   Advanced animation effects and visualizations.
 *   User authentication and personalized dashboards.
 
+
+[Video Link](https://www.loom.com/share/82b6abc346e34ac08b03a1c1c52e1f5b?sid=5a732e5a-9809-495c-9ab8-de03bffc5b66)
+
+
 ## License
 
 [MIT License](LICENSE)
